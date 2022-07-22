@@ -48,6 +48,12 @@
             background-color: orange;            
          }
 
+         .justificado {
+            text-align: justify;
+            max-width: 250px;
+            padding: 5px;
+         }
+
         /* CSS Flex Direction */
         .flex-container {
             
@@ -123,10 +129,81 @@
          .wrap-reverse {
             flex-wrap: wrap-reverse;
          }
+
+
+
+          /*###############*/
+         /* CSS Flex Flow */
+        /*###############*/
+
+         .flex-flow-container {
+            display: flex;
+            border: 1px solid black;
+            max-width: 300px;
+            margin-bottom: 10px;
+         }
+
+         .flex-flow-default {
+            flex-flow: row nowrap;
+         }
+
+         .flex-flow-wrap {
+            flex-flow: row wrap;
+         }
+         .flex-flow-column {
+            flex-flow: column wrap;
+         }
+
+         .flex-flow-item {
+            background-color: violet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            width: 75px;
+            height: 35px;
+            line-height: 35px;
+         }
+
+         /*###############*/
+         /* Justify Content */
+        /*###############*/
+
+        .container-justify {
+            max-width: 400px;
+            border: 1px solid black;
+            margin-bottom: 5px;
+            display: flex;
+        }
+
+        .item-justify {
+            background-color: blueviolet;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .flex-start {
+            justify-content: flex-start;
+        }
+        .flex-end {
+            justify-content: flex-end;
+        }
+        .flex-center {
+            justify-content: center;
+        }
+        .flex-spacebetween {
+            justify-content: space-between;
+        }
+        .flex-spacearound {
+            justify-content: space-around;
+        }
     </style>
 </head>
 <body>
-
+    <div>
+        <h1>Fundamentos - Display Flex<span style="font-size: 10px;"> (Ver código fonte Ctrl+U)</span></h1>
+        
+    </div>
     <!--Flex Direction-->
    <div class="container">
     <h1>Flex Direction</h1>
@@ -192,7 +269,79 @@
         <div class="item orange">4</div>
     </div>
    </div>
-   
+   <!--FIM Flex Wrap-->
+   <!--Flex Flow-->
+    <div class="container">
+        <h1>Flex Flow</h1>
+        <p class="justificado">É um atalho para as propriedades flex-direction e flex-wrap.
+        Porém, seu uso não é tão comum,visto que, quando mudamoso flex-direction para column, mantemos o padrão
+        do flex-wrap que é nowrap.</p>
+        <p>row nowrap (Padrão)</p>
+        <div class="flex-flow-container flex-flow-default">            
+            <div class="flex-flow-item">1</div>
+            <div class="flex-flow-item">2</div>
+            <div class="flex-flow-item">3</div>
+            <div class="flex-flow-item">4</div>
+            <div class="flex-flow-item">5</div>
+            <div class="flex-flow-item">6</div>
+        </div>
+        <p>row wrap</p>
+        <div class="flex-flow-container flex-flow-wrap">            
+            <div class="flex-flow-item">1</div>
+            <div class="flex-flow-item">2</div>
+            <div class="flex-flow-item">3</div>
+            <div class="flex-flow-item">4</div>
+            <div class="flex-flow-item">5</div>
+            <div class="flex-flow-item">6</div>
+        </div>
+        <p>column wrap</p>
+        <div class="flex-flow-container flex-flow-column" style="max-height: 150px;">            
+            <div class="flex-flow-item">1</div>
+            <div class="flex-flow-item">2</div>
+            <div class="flex-flow-item">3</div>
+            <div class="flex-flow-item">4</div>
+            <div class="flex-flow-item">5</div>
+            <div class="flex-flow-item">6</div>
+        </div>
+    </div>  
+    <!--FIM Flex Flow--> 
+    <!--Justify Content-->
+    <div class="container">
+        <h1>Justify Content</h1>
+        <p>flex-start (Padrão)</p>
+        <section class="container-justify flex-start">
+            <div class="item-justify">1</div>
+            <div class="item-justify">Item 2</div>
+            <div class="item-justify">Outro item</div>
+        </section>
+        <p>flex-end</p>
+        <section class="container-justify flex-end">
+            <div class="item-justify">1</div>
+            <div class="item-justify">Item 2</div>
+            <div class="item-justify">Outro item</div>
+        </section>
+        <p>center</p>
+        <section class="container-justify flex-center">
+            <div class="item-justify">1</div>
+            <div class="item-justify">Item 2</div>
+            <div class="item-justify">Outro item</div>
+        </section>        
+        <p>space-between</p>
+        <section class="container-justify flex-spacebetween">
+            <div class="item-justify">1</div>
+            <div class="item-justify">Item 2</div>
+            <div class="item-justify">Item 3</div>
+            <div class="item-justify">Outro item</div>
+        </section>
+        <p>space-around</p>
+        <section class="container-justify flex-spacearound">
+            <div class="item-justify">1</div>
+            <div class="item-justify">Item 2</div>
+            <div class="item-justify">Item 3</div>
+            <div class="item-justify">Outro item</div>
+        </section>
+    </div>
+    
    
    
 
