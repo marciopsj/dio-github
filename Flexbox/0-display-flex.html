@@ -23,14 +23,19 @@
             margin: 0;
             padding: 0;
         }
+
+        body {
+            background-color: #E5E5E5;
+        }
         
         .container {
             max-width: 400px;
             float: left;
-            margin: 5px;
-            border: 1px solid black;
+            margin: 10px 20px;            
             border-radius: 10px;
-            padding: 5px;
+            padding: 10px;            
+            height: 600px;
+            background-color: white;
         }
 
         h1 {
@@ -197,6 +202,40 @@
         .flex-spacearound {
             justify-content: space-around;
         }
+
+
+         /*###############*/
+         /*Align Items */
+        /*###############*/
+
+        .container-align-items {
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+            margin-bottom: 5px;
+        }
+
+        .item-align-items {
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1; 
+        }
+
+        .align-items-center {
+            align-items: center;
+        }
+
+        .align-items-stretch {
+            align-items: stretch;
+        }
+        .align-items-flex-start {
+            align-items: flex-start;
+        }
+        .align-items-flex-end {
+            align-items: flex-end;
+        }
     </style>
 </head>
 <body>
@@ -341,6 +380,38 @@
             <div class="item-justify">Outro item</div>
         </section>
     </div>
+    <!--FIM Justify Content-->
+    <!--Align Items-->
+    <div class="container">
+        <h1>Align Items</h1>
+        <p>Center</p>
+        <section class="container-align-items align-items-center">
+            <div class="item-align-items">Item 1</div>
+            <div class="item-align-items">Um texto qualquer de teste</div>
+            <div class="item-align-items">Item 3 mais um texto de teste qualquer para testar</div>
+        </section>
+        <p>stretch - Crescem de acordo com o maior conteúdo.</p>
+        <section class="container-align-items align-items-stretch">
+            <div class="item-align-items">Item 1</div>
+            <div class="item-align-items">Um texto qualquer de teste</div>
+            <div class="item-align-items">Item 3 mais um texto de teste qualquer para testar</div>
+        </section>
+        <p>flex-start</p>
+        <section class="container-align-items align-items-flex-start">
+            <div class="item-align-items">Item 1</div>
+            <div class="item-align-items">Um texto qualquer de teste</div>
+            <div class="item-align-items">Item 3 mais um texto de teste qualquer para testar</div>
+        </section>
+        <p>flex-end</p>
+        <section class="container-align-items align-items-flex-end">
+            <div class="item-align-items">Item 1</div>
+            <div class="item-align-items">Um texto qualquer de teste</div>
+            <div class="item-align-items">Item 3 mais um texto de teste qualquer para testar</div>
+        </section>
+    </div>
+    
+   
+    
     
    
    
