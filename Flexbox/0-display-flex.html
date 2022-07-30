@@ -292,6 +292,92 @@
 
             </div>
         </div>
+        <!--FIM Flex Shrink-->
+        <!--Flex-->
+        <div class="container">
+            <h1>Flex</h1>
+            <p>A propriedade Flex é uma abreviação de escrita para as propriedade: grow, shrink e basis (Nesta ordem).</p>
+            <p>flex: 1;</p>
+            <div class="container-flex-flex">
+                <div class="item-flex-flex flex-1">A</div>
+                <div class="item-flex-flex flex-1">BBB</div>
+                <div class="item-flex-flex flex-1">C</div>
+                <div class="item-flex-flex flex-1">D</div>
+                <div class="item-flex-flex flex-1">EF</div>
+            </div>
+            <p>flex alternados</p>
+            <div class="container-flex-flex">
+                <div class="item-flex-flex flex-1">1 A</div>
+                <div class="item-flex-flex flex-1">1 BBB</div>
+                <div class="item-flex-flex flex-2">2 C</div>
+                <div class="item-flex-flex flex-1">1 D</div>
+                <div class="item-flex-flex flex-1">1 EF</div>
+            </div>
+            <p>flex Layout Test</p>
+            <div class="container-flex-flex flex-column flex-flex-height">
+                <div class="item-flex-flex"><h5>Header</h5></div>
+                <div class="container-flex-flex flex-1 no-border">
+                    <div class="item-flex-flex"><h5>Nav</h5></div>
+                    <div class="item-flex-flex flex-1">
+                        <h5>Main: flex: 1;</h5>
+                        <div class="container-flex-flex no-border">
+                            <div class="item-flex-flex flex-section flex-2">
+                                <h5>Section</h5>
+                                <p>Content</p>
+                                <p>Content</p>
+                                <p>flex 2</p>
+                            </div>
+                            <div class="item-flex-flex flex-section flex-1"><h5>Section</h5></div>
+                            <div class="item-flex-flex flex-section flex-1"><h5>Section</h5></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item-flex-flex"><h5>Footer</h5></div>
+                
+            </div>
+        </div>
+        <!--FIM Flex-->
+        <!--Flex Order-->
+        <div class="container">
+            <h1>Flex Order</h1>
+            <p>Propriedade que manipula a ordem dos itens.</p>
+            <p>Ordem normal</p>
+            <div class="container-flex-flex flex-column">
+                <div class="item-flex-flex">1</div>
+                <div class="item-flex-flex">2</div>
+                <div class="item-flex-flex">3m</div>
+                <div class="item-flex-flex">4n</div>
+            </div>
+            <p>Usando Flex Order</p>
+            <div class="container-flex-flex flex-column">
+                <div class="item-flex-flex o-2">1 Order: 2;</div>
+                <div class="item-flex-flex o-3">2 Order: 3;</div>
+                <div class="item-flex-flex o-1">3m Order: 1;</div>
+                <div class="item-flex-flex">4n</div>
+            </div>
+        </div>
+        <!--FIM Flex Order-->
+        <!--Flex Align-Self-->
+        <div class="container">
+            <h1>Flex Align-Self</h1>
+            <p>Propriedade que estabelece o alinhamento de modo individual sobre determinado item.</p>
+            <p>Normal</p>
+            <div class="container-flex-flex">
+                <div class="item-flex-flex">AAA</div>
+                <div class="item-flex-flex">123</div>
+                <div class="item-flex-flex">Lorem Ipsum um texto qualquer para testar texto para teste</div>
+                <div class="item-flex-flex">Item 4</div>
+            </div>
+            <p>Usando Align-Self</p>
+            <div class="container-flex-flex">
+                <div class="item-flex-flex align-self-start">flex-start</div>
+                <div class="item-flex-flex align-self-center">center</div>
+                <div class="item-flex-flex align-self-auto">Auto - Lorem Ipsum um texto qualquer para testar texto para teste</div>
+                <div class="item-flex-flex align-self-end">flex-end</div>
+            </div>
+        </div>
+
     </main>
    
    
