@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;            
+        }
+
+        table {
+            width: 250px;
+            text-align: center;
+            box-shadow: 13px 15px 19px -3px rgba(0,0,0,0.68);                    
+            border: solid 1px gray;
+        } 
+
+        table caption {
+            margin-bottom: 5px;
+        }
+        
+        table thead th {
+            background-color: black;
+            color: white;
+        }
+        
+        table tbody td {                   
+            padding: 5px;       
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color:brown;
+        }
+
+        table tbody tr:hover td {
+            background-color: blueviolet;            
+        }
+        
+        table tfoot td {
+            background-color: lightgray;
+            color: black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table summary="Texto para o leitor de tela para acessibilidade" cellspacing="0">
+            <caption>Título/Nome para a Tabela</caption>
+            <thead> 
+                <!-- TR => Table Row -->
+                <tr>
+                    <th colspan="2">Minha Tabela</th>
+                </tr>
+                <tr>
+                    <th title="Nome Completo">Nome</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Marcio</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>Enzo</td>
+                    <td>09</td>
+                </tr>
+                <tr>
+                    <td>Liebe</td>
+                    <td>03</td>
+                </tr>
+                <tr>
+                    <td>Cascão</td>
+                    <td>08</td>
+                </tr>
+                <tr>
+                    <td>Minnie</td>
+                    <td>07</td>
+                </tr>
+                <tr>
+                    <td>Pateta</td>
+                    <td>11</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>06</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
