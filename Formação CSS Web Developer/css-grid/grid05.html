@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - Alinhando Itens</title>
+    <style>
+        .container {
+            height: 80vh;
+            display: grid;
+            grid: repeat(2, 200px) / repeat(3, auto);
+
+            /* Alinhar itens na Horizontal e Vertical */
+            /* justify-items: center;
+            align-items: start; */
+            /* place-items: Shorthand <align-items>V <justify-items>H
+                Pode deixar um único valor para os dois
+                exemplo place-items: center; */
+            place-items: start center;
+
+
+            /* Alinhar container (conteúdo) */
+            /* justify-content: space-evenly;
+            align-content: space-around; */
+            place-content: space-around space-evenly;
+            
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .item-1 {
+            background-color: palegreen;
+        }
+
+        .item-2 {
+            background-color: aqua;
+            /* Alinha item específico */
+            /* justify-self: center;
+            align-self: center; */
+            place-self: center;
+            
+        }
+
+        .item-3 {
+            background-color: blue;
+        }
+
+        .item-4 {
+            background-color:  violet;
+        }
+
+        .item-5 {
+            background-color:blueviolet;
+        }
+
+        .item-6 {
+            background-color:brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-1">Item 01</div>
+        <div class="item-2">Item 02</div>
+        <div class="item-3">Item 03</div>
+        <div class="item-4">Item 04</div>
+        <div class="item-5">Item 05</div>
+        <div class="item-6">Item 06</div>
+    </div>
+</body>
+</html>

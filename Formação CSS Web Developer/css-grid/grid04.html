@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorthand - grid-template</title>
+    <style>
+        body {
+            display: grid;
+            grid-template: 
+            "header header header header" 100px
+            "main main . aside" 200px
+            "footer footer footer footer" 50px /
+            1fr 1fr 1fr 1fr;
+        }
+
+        header {
+            background-color: orange;
+            grid-area: header;
+        }
+
+        main {
+            background-color: deepskyblue;
+            grid-area: main;
+        }
+
+        aside {
+            background-color: lightcoral;
+            grid-area: aside;
+        }
+
+        footer {
+            background-color: yellowgreen;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>Main</main>
+    <aside>Sidebar</aside>
+    <footer>Footer</footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - Adicionando colunas e linhas</title>
+    <style>
+        .container {
+            height: 500px;
+            display: grid;
+            grid-template-columns: 2fr repeat(2, 1fr);
+            grid-template-rows: 1fr 2fr 1fr;
+            gap: 16px 5px;
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .item-1 {
+            background-color: palegreen;
+        }
+
+        .item-2 {
+            background-color: aqua;
+        }
+
+        .item-3 {
+            background-color: blue;
+        }
+
+        .item-4 {
+            background-color:  violet;
+        }
+
+        .item-5 {
+            background-color:blueviolet;
+        }
+
+        .item-6 {
+            background-color:brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item-1">Item 01</div>
+        <div class="item-2">Item 02</div>
+        <div class="item-3">Item 03</div>
+        <div class="item-4">Item 04</div>
+        <div class="item-5">Item 05</div>
+        <div class="item-6">Item 06</div>
+    </div>
+</body>
+</html>
