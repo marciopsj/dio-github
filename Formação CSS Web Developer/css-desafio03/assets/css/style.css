@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Alteração de Cursor e Hover */
+
+.pointer-over-icon:hover {
+    cursor: pointer; 
+}
+
+.icon-over:hover {
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer; 
+}
+
+/* --------------------------- */
+
+.header-container {
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    margin-top: 10px;
+}
+
+.header-gap {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.search {
+    display: flex;    
+}
+
+.search-input input {
+    width: 348px;
+    height: 40px;
+    border: 1px solid #CCCCCC;
+    padding: 1rem;
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 40px;
+    background: #F8F8F8;
+    border: 1px solid #CCCCCC;
+    border-radius: 0 1.5rem 1.5rem 0;
+    
+}
+
+
+.icon-over {
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.2s ease-in;
+}
+
+
+.profile-image {
+    width: 34px;
+    height: 34px;
+    background: url('../images/profile.jpg') no-repeat;
+    background-size: cover;
+    
+    border-radius: 50%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: "aside main" 80vh /
+    220px 3fr;
+    padding: 20px 32px;
+    gap: 12px;
+}
+
+.sidebar-container {
+    grid-area: aside;
+    background-color: aqua;
+}
+
+.main-container {    
+    grid-area: main;
+    background-color: brown;        
+}
+
+
+
+
+
+
