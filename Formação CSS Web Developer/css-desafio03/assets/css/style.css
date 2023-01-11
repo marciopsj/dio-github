@@ -96,6 +96,27 @@
     background-color: brown;        
 }
 
+.sidebar-itens {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    grid-row-gap: 16px;
+    place-items: center start;
+    
+}
+
+.sidebar-itens > a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+
+#home::before {
+    content: url('../images/home.png');
+    padding-right: 16px;
+    vertical-align: middle;
+}
 
 
 
