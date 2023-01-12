@@ -12,7 +12,7 @@
 
 /* Alteração de Cursor e Hover */
 
-.pointer-over-icon:hover {
+.pointer-over:hover {
     cursor: pointer; 
 }
 
@@ -80,27 +80,21 @@
 
 .grid-container {
     display: grid;
-    grid-template: "aside main" 80vh /
+    grid-template: "aside main" auto /
     220px 3fr;
-    padding: 20px 32px;
+    padding: 34px 32px;
     gap: 12px;
 }
 
 .sidebar-container {
     grid-area: aside;
-    background-color: aqua;
-}
-
-.main-container {    
-    grid-area: main;
-    background-color: brown;        
+    
 }
 
 .sidebar-itens {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(10, 1fr);
-    grid-row-gap: 16px;
+    display: grid;    
+    grid: repeat(10, 1fr) / 1fr;
+    grid-row-gap: 14px;
     place-items: center start;
     
 }
@@ -111,14 +105,106 @@
     color: #000000;
 }
 
-
 #home::before {
     content: url('../images/home.png');
     padding-right: 16px;
     vertical-align: middle;
 }
 
+#explore::before {
+    content: url('../images/compass.png');
+    padding-right: 16px;
+    vertical-align: middle;
+}
+
+#subscriptions::before {
+    content: url('../images/youtube.png');
+    padding-right: 16px;
+    vertical-align: middle;
+}
+
+#music::before {
+    content: url('../images/disc.png');
+    padding-right: 16px;
+    vertical-align: middle;
+}
+
+#likes::before {
+    content: url('../images/thumbs-up.png');
+    padding-right: 16px;
+    vertical-align: middle;
+}
+
+#later::before {
+    content: url('../images/clock.png');
+    padding-right: 16px;
+    vertical-align: middle;
+}
+
+#download::before {
+    content: url('../images/download.png');
+    padding-right: 16px;
+    vertical-align: middle;
+}
+
+#movie::before {
+    content: url('../images/film.png');
+    padding-right: 16px;
+    vertical-align: middle;
+}
+
+#learn::before {
+    content: url('../images/book.png');
+    padding-right: 16px;
+    vertical-align: middle;
+}
+
+#sport::before {
+    content: url('../images/award.png');
+    padding-right: 16px;
+    vertical-align: middle;
+}
+
+.main-container {    
+    grid-area: main;
+    display: grid;
+    grid: repeat(3, auto) / repeat(4, 220px);
+    gap: 34px; 
+          
+}
 
 
+.item-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #515151;    
+}
 
+.item-content img {
+    padding-bottom: 8px;
+}
 
+.item-info {
+    display: flex;
+}
+
+.item-info img {
+    object-fit: contain;
+    padding-right: 8px;
+    align-self: flex-start;
+}
+
+.item-info-details h3 {
+    font-size: 1.17em;
+    font-weight: 500;
+    color: #000000;
+    padding-bottom: 8px;
+}
+
+.item-info-details p {
+    margin-bottom: 4px;
+    line-height: 1.2em;
+}
