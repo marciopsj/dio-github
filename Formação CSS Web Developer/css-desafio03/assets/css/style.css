@@ -16,6 +16,12 @@
     cursor: pointer; 
 }
 
+.icon-over {
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.2s ease-in;
+}
+
 .icon-over:hover {
     background-color: rgba(0,0,0,0.1);
     cursor: pointer; 
@@ -62,11 +68,7 @@
 }
 
 
-.icon-over {
-    padding: 8px;
-    border-radius: 50%;
-    transition: 0.2s ease-in;
-}
+
 
 
 .profile-image {
@@ -103,6 +105,12 @@
     font-size: 16px;
     font-weight: 400;
     color: #000000;
+    width: 220px; 
+    transition: 0.2s ease-out;
+}
+
+.sidebar-itens > a:hover {
+    background-color: rgba(0,0,0,0.1);
 }
 
 #home::before {
