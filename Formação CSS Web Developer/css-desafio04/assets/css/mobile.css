@@ -1,0 +1,71 @@
+
+body {        
+    width: 425px;    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;    
+    background: url('../images/Header\ Background\ \(1\).png') no-repeat;    
+    
+}
+
+.header-content {
+    max-width: 380px;
+    padding: 70px 24px 0;
+}
+
+.header-content h1 {    
+    font-size: 2rem;    
+    line-height: 2rem;
+}
+
+.header-buttons {         
+    flex-direction: column;        
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.header-buttons #windowsDownload, .header-buttons #openBrowser {    
+    width: 316px;    
+}
+
+main {    
+    gap: 40px;    
+    margin-top: 20px;
+}
+
+.section-container {    
+    flex-direction: column;
+    max-width: 370px;
+}
+
+main section:nth-child(2) .section-container {
+    flex-direction: column-reverse;
+}   
+
+main section img {    
+    width: 380px;
+}
+
+main section .content h1 {
+    font-size: 1.5rem;    
+    line-height: 2rem;    
+}
+
+main section .content p {
+    font-size: 1rem;    
+    line-height: 1.4rem;    
+}
+
+main section:last-child .content h1 {
+    font-size: 2rem;
+}
+
+
+    
+
+
+
