@@ -6,6 +6,10 @@
 --bs-btn-active-bg: #0c5734;
 }
 
+main {
+    margin-top: 5rem;;
+}
+
 .navbar-brand img {
     width: 50px;
 }
@@ -28,6 +32,10 @@
     position: absolute;
 }
 
+.card-menu img {
+    height: 300px;
+    object-fit: cover;
+}
 
 
 
