@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --text-color: #fff;
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: "Raleway", sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background: var(--nav-bg-color);
+    width: 100%;
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.menu-logo {
+    max-width: 160px;
+}
+
+.menu-logo img {
+    width: 100%;
+}
+
+.menu-item {
+    margin-right: 24px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.menu-item-button {
+    background-color: var(--tertiary-color);
+    padding: 8px 26px;
+    border-radius: 500px;
+    transition: background 1s, color 1s;
+}
+
+.menu-item-button:hover {
+    background: var(--btn-link-bg-color);
+    color: var(--btn-link-color);
+}
+
+@media screen and (max-width: 480px) {
+    .menu {
+        flex-direction: column;
+        padding: 32px 24px;
+        gap: 24px;
+    }
+
+    .menu-logo {
+        max-width: 100px;
+    }
+
+    .menu-item-button {
+        margin: 0;
+    }
+}
