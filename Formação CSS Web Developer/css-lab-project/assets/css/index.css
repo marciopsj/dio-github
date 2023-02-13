@@ -1,0 +1,101 @@
+@import url('./global.css');
+
+.header {
+    position: relative;
+    margin-top: 50px;
+    padding: 100px 0 300px;
+    background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+    background-size: 100% 100%;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(0deg, var(--primary-color), transparent);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 0 40px;
+}
+
+.header .channels-icon {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header .channels-icon img {
+    object-fit: contain;
+}
+
+.header-title {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header-title .title-light {
+    display: block;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.header-divider {
+    width: 70%;
+    max-width: 700px;
+    height: 5px;
+    background: var(--divider-bg-color);
+}
+
+.header-offer {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.header-offer .offer-price{
+    font-family: "Raleway", sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header-offer .price-small {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.subscription-button {
+    font-weight: 700;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 16px 40px;
+    border-radius: 500px;
+}
+
+.subscription-button-gradient {
+    background: var(--btn-bg-color-gradient);   
+    outline: 3px solid transparent;
+    background-size: 250%;
+    transition: background 1s, outline 1s, transform 1s;
+}
+
+.subscription-button-gradient:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);    
+    transform: scale(1.05);
+}
+
+.header .text-small {
+    max-width: 300px;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;    
+}
