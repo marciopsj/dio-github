@@ -5,7 +5,8 @@
     margin-top: 50px;
     padding: 100px 0 300px;
     background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
-    background-size: 100% 100%;
+    background-size: 400% 400%;
+    animation: bg-animation 10s ease infinite alternate;
 }
 
 .header::after {
@@ -77,6 +78,7 @@
     letter-spacing: 4px;
     padding: 16px 40px;
     border-radius: 500px;
+    animation: wiggle 2.2s linear infinite;
 }
 
 .subscription-button-gradient {
@@ -91,6 +93,7 @@
     background-position: 100%;
     outline: 2px solid var(--secondary-color);    
     transform: scale(1.05);
+    animation: none;
 }
 
 .header .text-small {
@@ -99,3 +102,52 @@
     font-weight: 300;
     text-align: center;    
 }
+
+@media screen and (max-width: 480px) {
+    .header {
+        margin-top: 128px;
+    }
+
+    .header .channels-icon {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Animation */
+
+@keyframes bg-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes wiggle {
+    0% {
+      transform: rotate(0);
+    }
+    15% {
+      transform: rotate(-15deg);
+    }
+    20% {
+      transform: rotate(10deg);
+    }
+    25% {
+      transform: rotate(-10deg);
+    }
+    30% {
+      transform: rotate(10deg);
+    }
+    35% {
+      transform: rotate(-10deg);
+    }
+    40%, 100% {
+      transform: rotate(0);
+    }
+  }
