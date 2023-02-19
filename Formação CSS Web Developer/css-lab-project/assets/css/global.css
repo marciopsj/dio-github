@@ -19,6 +19,7 @@
     --btn-link-color: #000;
     --divider-bg-color: linear-gradient( 90deg, #5516ba, rgba(255, 0, 229, 0.5) 80% );
     --btn-bg-color-gradient: linear-gradient( 45deg, #9b34ef 0%, #490cb0 20%, transparent 50% );
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
     scroll-behavior: smooth;
 }
 
@@ -30,6 +31,11 @@ body {
 
 p {
     font-family: "Quicksand", sans-serif;
+}
+
+.text-small {
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 .menu {
