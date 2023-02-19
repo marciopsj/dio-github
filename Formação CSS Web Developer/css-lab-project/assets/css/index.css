@@ -125,7 +125,11 @@ section {
 
 .subscription-plans {
     display: flex;
+    justify-content: space-around;
+    gap: 80px;
     margin: 40px 0;
+    perspective: 2000px;
+    perspective-origin: top;
 }
 
 .subscription-card {
@@ -133,10 +137,12 @@ section {
     flex-direction: column;
     justify-content: space-between;
     background: var(--card-bg-color);
+    max-width: 536px;
+    width: 100%;
     min-height: 600px;
     padding: 40px 60px;
     border-radius: 8px;
-
+    transition: transform 1s ease-in-out;
 }
 
 .subscription-card-header {
@@ -177,10 +183,22 @@ section {
     cursor: pointer;
 }
 
+.subscription-plans:has(.subscription-card:nth-child(1):hover) .subscription-card:nth-child(2) {
+    transform: rotateY(-45deg);
+}
+
+.subscription-plans:has(.subscription-card:nth-child(2):hover) .subscription-card:nth-child(1) {
+    transform: rotateY(45deg);
+}
 
 
 
 
+@media screen and (max-width: 1200px) {
+    .subscription-plans {
+        gap: 40px;
+    }
+}
 
 
 @media screen and (max-width: 480px) {
