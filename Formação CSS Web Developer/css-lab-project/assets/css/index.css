@@ -118,7 +118,7 @@ section {
     text-align: center;
 }
 
-.subscription-title {
+.title {
     font-size: 2rem;
     font-weight: 500;
 }
@@ -191,8 +191,45 @@ section {
     transform: rotateY(45deg);
 }
 
+#content {
+    margin: 100px auto;
+}
 
+.content-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
 
+.content-card {
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid transparent;
+}
+
+.content-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+@media (pointer: coarse) {
+    .subscription-plans:has(.subscription-card:nth-child(1):hover) .subscription-card:nth-child(2),
+    .subscription-plans:has(.subscription-card:nth-child(2):hover) .subscription-card:nth-child(1) {
+        transform: none;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .subscription-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 @media screen and (max-width: 1200px) {
     .subscription-plans {
@@ -208,6 +245,15 @@ section {
 
     .header .channels-icon {
         flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .subscription-card {
+        padding: 40px;
+    }
+
+    .subscription-card-header {
+        flex-direction: column;
         justify-content: center;
     }
 }
