@@ -208,18 +208,56 @@ section {
     background-size: cover;
     background-position: center;
     border: 1px solid transparent;
+    transition: transform 0.8s, background 0.8s, border 1s;
 }
 
 .content-image {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    transition: opacity 2s;
+}
 
+.content-card:hover {
+    transform: scale(1.05);
+    border: 2px solid var(--tertiary-color);
+}
+
+.content-card:hover .content-image {
+    opacity: 0;
+}
+
+.content-card:nth-child(1):hover {
+    background-image: url('../images/hbo-hover_0.webp');
+}
+
+.content-card:nth-child(2):hover {
+    background-image: url('../images/MAX-Hover.webp');
+}
+
+.content-card:nth-child(3):hover {
+    background-image: url('../images/DC-Hover.webp');
+}
+
+.content-card:nth-child(4):hover {
+    background-image: url('../images/WB-Hover.webp');
+}
+
+.content-card:nth-child(5):hover {
+    background-image: url('../images/CN-Hover.png');
+}
+
+.content-card:nth-child(6):hover {
+    background-image: url('../images/UCL-Hover.webp');
 }
 
 @media (pointer: coarse) {
     .subscription-plans:has(.subscription-card:nth-child(1):hover) .subscription-card:nth-child(2),
     .subscription-plans:has(.subscription-card:nth-child(2):hover) .subscription-card:nth-child(1) {
+        transform: none;
+    }
+
+    .content-card:hover {
         transform: none;
     }
 }
