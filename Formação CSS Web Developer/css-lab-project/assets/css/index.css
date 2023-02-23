@@ -262,6 +262,12 @@ section {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .content-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media screen and (max-width: 1140px) {
     .subscription-plans {
         flex-direction: column;
@@ -272,6 +278,10 @@ section {
 @media screen and (max-width: 1200px) {
     .subscription-plans {
         gap: 40px;
+    }
+
+    .content-card-container {
+        gap: 32px;
     }
 }
 
@@ -293,6 +303,11 @@ section {
     .subscription-card-header {
         flex-direction: column;
         justify-content: center;
+    }
+
+    .content-card-container {
+        grid-template-columns: repeat(6, 100%);
+        overflow: auto hidden;
     }
 }
 
