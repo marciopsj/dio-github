@@ -251,6 +251,34 @@ section {
     background-image: url('../images/UCL-Hover.webp');
 }
 
+.footer-link {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: var(--link-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 14px;
+    transition: color 0.5s;
+}
+
+.footer-link:hover {
+    color: var(--text-color);
+}
+
+.footer-rigths {
+    font-size: 0.75rem;
+    margin: 16px 0;
+    color: var(--link-color);
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+
 @media (pointer: coarse) {
     .subscription-plans:has(.subscription-card:nth-child(1):hover) .subscription-card:nth-child(2),
     .subscription-plans:has(.subscription-card:nth-child(2):hover) .subscription-card:nth-child(1) {
@@ -308,6 +336,11 @@ section {
     .content-card-container {
         grid-template-columns: repeat(6, 100%);
         overflow: auto hidden;
+    }
+
+    .footer-link {
+        display: block;
+        margin-bottom: 16px;
     }
 }
 

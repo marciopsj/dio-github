@@ -20,6 +20,7 @@
     --divider-bg-color: linear-gradient( 90deg, #5516ba, rgba(255, 0, 229, 0.5) 80% );
     --btn-bg-color-gradient: linear-gradient( 45deg, #9b34ef 0%, #490cb0 20%, transparent 50% );
     --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --link-color: #9e86ff;
     scroll-behavior: smooth;
 }
 
