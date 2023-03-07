@@ -71,31 +71,6 @@
     font-weight: 300;
 }
 
-.subscription-button {
-    font-weight: 700;
-    color: var(--text-color);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    padding: 16px 40px;
-    border-radius: 500px;
-    animation: wiggle 2.2s linear infinite;
-}
-
-.subscription-button-gradient {
-    background: var(--btn-bg-color-gradient);   
-    outline: 3px solid transparent;
-    background-size: 250%;
-    transition: background 1s, outline 1s, transform 1s;
-}
-
-.subscription-button-gradient:hover {
-    background-color: transparent;
-    background-position: 100%;
-    outline: 2px solid var(--secondary-color);    
-    transform: scale(1.05);
-    animation: none;
-}
-
 .header .text-small {
     max-width: 300px;    
     text-align: center;    
@@ -109,13 +84,6 @@ section {
     background: url('../images/background-movies-series.png') no-repeat;
     background-size: cover;
     position: relative;    
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 24px;
-    text-align: center;
 }
 
 .title {
@@ -251,34 +219,6 @@ section {
     background-image: url('../images/UCL-Hover.webp');
 }
 
-.footer-link {
-    font-size: 0.875rem;
-    font-weight: bold;
-    color: var(--link-color);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin: 0 14px;
-    transition: color 0.5s;
-}
-
-.footer-link:hover {
-    color: var(--text-color);
-}
-
-.footer-rigths {
-    font-size: 0.75rem;
-    margin: 16px 0;
-    color: var(--link-color);
-}
-
-.footer-social {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 80px;
-}
-
 @media (pointer: coarse) {
     .subscription-plans:has(.subscription-card:nth-child(1):hover) .subscription-card:nth-child(2),
     .subscription-plans:has(.subscription-card:nth-child(2):hover) .subscription-card:nth-child(1) {
@@ -338,10 +278,7 @@ section {
         overflow: auto hidden;
     }
 
-    .footer-link {
-        display: block;
-        margin-bottom: 16px;
-    }
+    
 }
 
 /* Animation */

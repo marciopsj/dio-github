@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    border: none;
 }
 
 :root {
@@ -21,6 +22,11 @@
     --btn-bg-color-gradient: linear-gradient( 45deg, #9b34ef 0%, #490cb0 20%, transparent 50% );
     --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
     --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
     scroll-behavior: smooth;
 }
 
@@ -32,6 +38,38 @@ body {
 
 p {
     font-family: "Quicksand", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 24px;
+    text-align: center;
+}
+
+.button {
+    font-weight: 700;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    animation: wiggle 2.2s linear infinite;
+}
+
+.button-gradient {
+    background: var(--btn-bg-color-gradient);   
+    outline: 3px solid transparent;
+    background-size: 250%;
+    transition: background 1s, outline 1s, transform 1s;
+}
+
+.button-gradient:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 2px solid var(--secondary-color);    
+    transform: scale(1.05);
+    animation: none;
 }
 
 .text-small {
@@ -80,6 +118,34 @@ p {
     color: var(--btn-link-color);
 }
 
+.footer-link {
+    font-size: 0.875rem;
+    font-weight: bold;
+    color: var(--link-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 14px;
+    transition: color 0.5s;
+}
+
+.footer-link:hover {
+    color: var(--text-color);
+}
+
+.footer-rigths {
+    font-size: 0.75rem;
+    margin: 16px 0;
+    color: var(--link-color);
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+
 @media screen and (max-width: 480px) {
     .menu {
         flex-direction: column;
@@ -93,6 +159,11 @@ p {
 
     .menu-item-button {
         margin: 0;
+    }
+
+    .footer-link {
+        display: block;
+        margin-bottom: 16px;
     }
 }
 
