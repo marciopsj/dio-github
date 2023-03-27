@@ -16,10 +16,11 @@
 
 const { gets, print } = require('./funcao-auxiliar-e02');
 
+const N = gets();
 let maiorNumeroPar = 0;
 let menorNumeroImpar = 0;
 
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < N; i++) {
     const num = gets();
     if (num % 2 === 0){
         if (num > maiorNumeroPar) {
@@ -34,5 +35,5 @@ for (let i = 0; i < 6; i++) {
     }
 }
 
-print(`O maior número Par é: ${maiorNumeroPar}`);
-print(`O menor número Impar é: ${menorNumeroImpar}`);
+print(`Maior número par: ${maiorNumeroPar}`);
+print(`Menor número impar: ${menorNumeroImpar}`);
