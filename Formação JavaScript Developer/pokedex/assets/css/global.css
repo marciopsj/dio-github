@@ -3,7 +3,7 @@
 :root {
     --bg-color: #f6f8fc;
     --bg-grass: #14A06F;
-    --bg-type-grass: rgba(97, 225, 202, 0.7);
+    --bg-types: rgba(97, 225, 202, 0.4);
 }
 
 * {

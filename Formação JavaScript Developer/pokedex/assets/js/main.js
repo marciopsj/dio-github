@@ -3,21 +3,24 @@ const print = (text) => {
     return console.log(text)
 }
 
+const pokemonTypesList = (pokemonTypes) => {
+    return pokemonTypes.map((typeSlot) => `<li class="item__type">${typeSlot.type.name}</li>`)
+}
+
 const pokemonToItemList = (pokemon) => {
     return `
-        <li class="content__item item--grass">
+        <li class="content__item item--${pokemon.type}">
             <div class="item__header">
                 <h3 class="item__name">${pokemon.name}</h3>
-                <span class="item__number">#001</span>
+                <span class="item__number">#${pokemon.order}</span>
             </div>
             <div class="item__info">
                 <ul class="item__types">
-                    <li class="item__type">Grass</li>
-                    <li class="item__type">Poison</li>
+                    ${pokemon.types.map((type) => `<li class="item__type">${type}</li>`).join("")}
                 </ul>
                 <img
                     class="item__img"
-                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+                    src="${pokemon.photo}"
                     alt="${pokemon.name}"
                 />
             </div>
@@ -28,14 +31,11 @@ const pokemonToItemList = (pokemon) => {
 const contentItems = document.querySelector('.content__items')
 
 pokeApi.getPokemons()
-    .then((pokemons) => {
-        const contentItem = []
-        for (let i = 0; i < pokemons.length; i++) {
-            const pokemon = pokemons[i]
-            contentItem.push(pokemonToItemList(pokemon))
-        }
-        print(contentItem) 
+    .then((pokemons = []) => {
+
+        contentItems.innerHTML += pokemons.map(pokemonToItemList).join("")
+
     })
     .catch((error) => print(error))
 
-     
+

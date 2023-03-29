@@ -39,7 +39,7 @@
 }
 
 .item__type {
-    background-color: var(--bg-type-grass);
+    background-color: var(--bg-types);
     padding: 4px 16px;    
     border-radius: 80px;   
 }
@@ -57,12 +57,32 @@
     background-color: orangered;
 }
 
-.item--grass {
+.item--grass, .item--bug {
     background-color: var(--bg-grass);
 }
 
-.item--shock {
+.item--electric {
     background-color: yellow;
+}
+
+.item--ground {
+    background-color: saddlebrown;
+}
+
+.item--normal {
+    background-color: sandybrown;    
+}
+
+.item--poison {
+    background-color: purple;
+}
+
+.item--fairy {
+    background-color: violet;
+}
+
+.item--fighting {
+    background-color: grey;
 }
 
 @media screen and (max-width: 375px) {
