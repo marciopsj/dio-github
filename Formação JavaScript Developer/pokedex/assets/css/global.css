@@ -2,8 +2,24 @@
 
 :root {
     --bg-color: #f6f8fc;
-    --bg-grass: #14A06F;
-    --bg-types: rgba(97, 225, 202, 0.4);
+    --bg-normal: #a6a877;
+    --bg-grass: #77c850;
+    --bg-fire: #ee7f30;
+    --bg-water: #678fee;
+    --bg-eletric: #f7cf2e;
+    --bg-ice: #98d5d7;
+    --bg-ground: #dfbf69;
+    --bg-flying: #a98ff0;
+    --bg-poison: #a040a0;
+    --bg-fighting: #bf3029;
+    --bg-psychic: #f65687;
+    --bg-dark: #725847;
+    --bg-rock: #b8a137;
+    --bg-bug: #a8b720;
+    --bg-ghost: #6e5896;
+    --bg-steel: #b9b7cf;
+    --bg-dragon: #6f38f6;
+    --bg-fairy: #f9aec7;    
 }
 
 * {

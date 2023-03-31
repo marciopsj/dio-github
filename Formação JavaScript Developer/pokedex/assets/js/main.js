@@ -16,7 +16,7 @@ const pokemonToItemList = (pokemon) => {
             </div>
             <div class="item__info">
                 <ul class="item__types">
-                    ${pokemon.types.map((type) => `<li class="item__type">${type}</li>`).join("")}
+                    ${pokemon.types.map((type) => `<li class="item__type item--${type}">${type}</li>`).join("")}
                 </ul>
                 <img
                     class="item__img"
