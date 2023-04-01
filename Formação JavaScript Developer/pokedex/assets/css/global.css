@@ -57,6 +57,32 @@ body {
     margin: 0;
 }
 
+.pagination {
+    display: flex;    
+    align-items: center;
+    justify-content: center;    
+    width: 100%;    
+    padding-top: 16px; 
+}
+
+.button {
+    background-color: #6c79db;
+    font-size: .75rem;
+    color: #fff;
+    padding: 4px 16px;
+    border: none;
+    border-radius: 1rem;
+    transition: .4s ease;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: #6c79db;
+    background-color: #fff;
+    border: 1px solid #6c79db;
+    transform: scale(1.1);
+}
+
 @media screen and (max-width: 375px) {
 
     .container {
