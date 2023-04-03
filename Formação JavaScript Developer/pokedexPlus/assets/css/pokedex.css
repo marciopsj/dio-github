@@ -1,0 +1,177 @@
+.content__items {
+    display: grid;
+    grid: repeat(5, 1fr) / repeat(2, 1fr);
+    gap: 12px;
+    padding-top: 12px;
+}
+
+.content__item {
+    cursor: pointer;
+    color: #fff;
+    padding: 1.2rem 1rem 0;
+    border-radius: 1rem;
+    
+}
+
+.item__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.item__name {
+    text-transform: capitalize;
+}
+
+.item__number {
+    font-size: .625rem;
+    opacity: 60%;
+}
+
+.item__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 12px;
+}
+
+.item__types {
+    display: flex;  
+    flex-direction: column;
+    gap: 4px;    
+    font-size: .625rem;
+    font-weight: 500;
+    text-align: center;    
+}
+
+.item__type {
+    padding: 4px 16px;    
+    border-radius: 80px;   
+    filter: brightness(1.1);
+}
+
+.item__img {
+    max-width: 60%;
+    height: 60px;
+
+}
+
+.item__about {
+    display: inline-block;
+    flex-direction: row;
+    position: relative;
+    top: -60px;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    width: 100%; 
+    border-radius: 8px;
+    z-index: 1;
+    opacity: 0;    
+    padding: 8px;
+    margin-bottom: 0;
+    filter: brightness(1.1);
+    transition: opacity 0.6s ease;    
+}
+
+.content__item:hover .item__about {
+    opacity: 90%;
+}
+
+.about__header {
+    font-size: 1rem;
+    padding-bottom: 4px;
+}
+
+.small--text {
+    font-size: 0.75rem;
+}
+
+.item--normal {
+    background-color: var(--bg-normal);    
+}
+
+.item--grass {
+    background-color: var(--bg-grass);
+}
+
+.item--fire {
+    background-color: var(--bg-fire);
+}
+
+.item--water {
+    background-color: var(--bg-water);
+}
+
+.item--electric {
+    background-color: var(--bg-eletric);
+}
+
+.item--ice {
+    background-color: var(--bg-ice);
+}
+
+.item--ground {
+    background-color: var(--bg-ground);
+}
+
+.item--flying {
+    background-color: var(--bg-flying);
+}
+
+.item--poison {
+    background-color: var(--bg-poison);
+}
+
+.item--fighting {
+    background-color: var(--bg-fighting);
+}
+
+.item--psychic {
+    background-color: var(--bg-psychic);
+}
+
+.item--dark {
+    background-color: var(--bg-dark);
+}
+
+.item--rock {
+    background-color: var(--bg-rock);
+}
+
+.item--bug {
+    background-color: var(--bg-bug);
+}
+
+.item--ghost {
+    background-color: var(--bg-ghost);
+}
+
+.item--steel {
+    background-color: var(--bg-steel);
+}
+
+.item--dragon {
+    background-color: var(--bg-dragon);
+}
+
+.item--fairy {
+    background-color: var(--bg-fairy);
+}
+
+
+@media screen and (max-width: 375px) {
+
+    .content__items {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .content__items {
+        grid: repeat(5, 1fr) / repeat(4, 1fr);
+    }
+    
+}
