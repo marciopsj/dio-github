@@ -1,8 +1,22 @@
 .header__content {
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
     text-align: center;
+}
+
+.header__content::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-image: url('../img/icons/header.svg');    
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
 }
 
 .header__profile {
@@ -56,4 +70,32 @@
 
 .header__info--email::before {
     background-image: url('../img/icons/email.svg');
+}
+
+@media screen and (min-width: 768px) {
+
+    .header__content {
+        display: grid;
+        grid-template-areas: 
+        "profile title"
+        "profile infos"
+        ;
+    }
+
+    .header__profile {
+        grid-area: profile;
+        margin: 0 auto;
+    }
+
+    .header__title {
+        grid-area: title;
+        max-width: 210px;
+        text-align: start;        
+    }
+
+    .header__infos {
+        grid-area: infos;
+    }
+
+    
 }
