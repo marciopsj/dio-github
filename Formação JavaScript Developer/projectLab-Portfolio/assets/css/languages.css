@@ -1,0 +1,23 @@
+.language__list {
+    display: flex;
+    align-items: center;    
+    flex-wrap: wrap;
+    gap: 1rem;    
+}
+
+.language__item {
+    font-size: 1.25rem;
+    font-weight: 700;    
+}
+
+.language__item::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../img/icons/check.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: .5rem ;
+}
