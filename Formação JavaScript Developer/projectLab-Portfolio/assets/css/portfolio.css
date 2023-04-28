@@ -1,0 +1,38 @@
+.portfolio__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    width: 100%;
+}
+
+.portfolio__item {
+    display: flex;
+    flex-direction: column;
+    gap: .20rem;
+}
+
+.portfolio__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.title--github::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../img/icons/github.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    vertical-align: baseline;
+    margin-right: .5rem ;
+}
+
+.portfolio__link {
+    color: #fff;
+}
+
+.portfolio__link:hover {
+    text-decoration: underline;
+}
