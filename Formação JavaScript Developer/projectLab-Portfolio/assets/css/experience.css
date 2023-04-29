@@ -1,4 +1,4 @@
-.portfolio__list {
+.experience__list {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -6,21 +6,21 @@
     width: 100%;
 }
 
-.portfolio__item {
+.experience__item {
     display: flex;
     flex-direction: column;
-    gap: .20rem;
+    gap: .75rem;
 }
 
-.portfolio__title {
+.experience__title {    
     font-size: 1.25rem;
     font-weight: 700;
 }
 
-.title--github::before {
+.experience__period::before {
     content: '';
     display: inline-block;
-    background-image: url('../img/icons/github.svg');
+    background-image: url('../img/icons/calendar.svg');
     background-repeat: no-repeat;
     background-size: contain;
     width: 15px;
@@ -28,4 +28,3 @@
     vertical-align: baseline;
     margin-right: .5rem ;
 }
-

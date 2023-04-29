@@ -17,6 +17,14 @@ body {
     color: #fff;
 }
 
+a {
+    color: #fff;    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .main__container {
     padding: 1rem;
     margin: 1rem;
