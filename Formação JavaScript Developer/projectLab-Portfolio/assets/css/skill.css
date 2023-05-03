@@ -1,0 +1,52 @@
+.skills__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.hard_skill__list,
+.soft_skill__list {
+    display: flex;    
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    padding: 1.25rem;
+}
+
+.hard_skill__item,
+.soft_skill__item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .20rem;    
+}
+
+.hard_skill__item img {
+    max-width: 50px;
+}
+
+.skills__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.soft_skill__item::before {
+    content: '';
+    display: inline-block;
+    background-image: url('../img/icons/check.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: .5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .skills__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
