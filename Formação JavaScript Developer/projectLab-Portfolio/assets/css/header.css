@@ -1,4 +1,4 @@
-.header__content {
+.profile__content {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -6,7 +6,7 @@
     text-align: center;
 }
 
-.header__content::after {
+.profile__content::after {
     content: '';
     display: inline-block;
     position: absolute;
@@ -19,26 +19,26 @@
     height: 2rem;
 }
 
-.header__profile {
+.profile__photo {
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
 
-.header__title {
+.profile__title {
     font-family: 'Neue Machina';
     font-size: 2em;
     margin: 0.67em 0;
 }
 
-.header__infos {
+.profile__infos {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
 }
 
-.header__info {
+.profile__info {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -46,7 +46,7 @@
     padding: .5rem;
 }
 
-.header__info::before {
+.profile__info::before {
     content: '';
     display: inline-block;    
     background-size: contain;
@@ -56,25 +56,25 @@
     margin-right: .5rem;
 }
 
-.header__info--job::before {
+.profile__info--job::before {
     background-image: url('../img/icons/job.svg');
 }
 
-.header__info--location::before {
+.profile__info--location::before {
     background-image: url('../img/icons/location.svg');
 }
 
-.header__info--phone::before {
+.profile__info--phone::before {
     background-image: url('../img/icons/phone.svg');
 }
 
-.header__info--email::before {
+.profile__info--email::before {
     background-image: url('../img/icons/email.svg');
 }
 
 @media screen and (min-width: 768px) {
 
-    .header__content {
+    .profile__content {
         display: grid;
         grid-template-areas: 
         "profile title"
@@ -82,18 +82,18 @@
         ;
     }
 
-    .header__profile {
+    .profile__photo {
         grid-area: profile;
         margin: 0 auto;
     }
 
-    .header__title {
+    .profile__title {
         grid-area: title;
         max-width: 210px;
         text-align: start;        
     }
 
-    .header__infos {
+    .profile__infos {
         grid-area: infos;
     }
 

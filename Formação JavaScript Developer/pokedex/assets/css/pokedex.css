@@ -6,6 +6,7 @@
 }
 
 .content__item {
+    cursor: pointer;
     color: #fff;
     padding: 1.2rem 1rem;
     border-radius: 1rem;
