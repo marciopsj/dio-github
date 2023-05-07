@@ -45,11 +45,25 @@ function updateLanguage(profileData) {
     `).join('')
 }
 
+function updatePortfolio(profileData) {
+    const portfolio = document.querySelector('.portfolio__list')
+    portfolio.innerHTML = profileData.portfolio.map(project => `
+    <li class="portfolio__item">
+              <span ${project.github ? 'class="portfolio__title title--github"' : 'class="portfolio__title"'}>
+              ${project.name}
+              </span>
+              <a href="${project.url}" target="_blank">
+              ${project.url}
+              </a>
+    </li>
+    `).join('')
+}
+
 (async () => {
     const profileData = await fetchProfileData()
     updateProfileData(profileData)
     updateSoftSkill(profileData)
     updateHardSkill(profileData)
     updateLanguage(profileData)
-
+    updatePortfolio(profileData)
 })()
