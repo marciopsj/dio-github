@@ -8,28 +8,24 @@
   "skills": {
     "hardSkills": [
       {
-        "name": "Nodejs",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png"
+        "name": "HTML",
+        "logo": "https://raw.githubusercontent.com/marciopsj/dio-github/main/Forma%C3%A7%C3%A3o%20JavaScript%20Developer/projectLab-Portfolio/data/imgs/html.png"
       },
       {
-        "name": "Java",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/java.png"
+        "name": "CSS",
+        "logo": "https://raw.githubusercontent.com/marciopsj/dio-github/main/Forma%C3%A7%C3%A3o%20JavaScript%20Developer/projectLab-Portfolio/data/imgs/css.png"
       },
       {
-        "name": "Angular",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/angular.png"
+        "name": "Javascript",
+        "logo": "https://raw.githubusercontent.com/marciopsj/dio-github/main/Forma%C3%A7%C3%A3o%20JavaScript%20Developer/projectLab-Portfolio/data/imgs/js.png"
       },
       {
-        "name": "React",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/react.png"
+        "name": "Github",
+        "logo": "https://raw.githubusercontent.com/marciopsj/dio-github/main/Forma%C3%A7%C3%A3o%20JavaScript%20Developer/projectLab-Portfolio/data/imgs/github.png"
       },
       {
-        "name": "Mongodb",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/mongodb.png"
-      },
-      {
-        "name": "Postgresql",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/postgresql.png"
+        "name": "VSCode",
+        "logo": "https://raw.githubusercontent.com/marciopsj/dio-github/main/Forma%C3%A7%C3%A3o%20JavaScript%20Developer/projectLab-Portfolio/data/imgs/vscode.png"
       }
     ],
     "softSkills": [
@@ -42,37 +38,25 @@
   },
   "languages": [
     "Português BR",
-    "Inglês (intermediário)",
-    "Espanhol (intermediário)",
-    "Italiano (iniciante)"
+    "Inglês (intermediário)"    
   ],
   "portfolio": [
     {
-      "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
-      "url": "https://github.com/RenanJPaula/js-developer-pokedex",
+      "name": "Criação de uma Pokedex",
+      "url": "https://github.com/marciopsj/dio-github/tree/main/Forma%C3%A7%C3%A3o%20JavaScript%20Developer/pokedexPlus",
       "github": true
     },
     {
-      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
-      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
+      "name": "Projeto de clone do site HBO Max, com o intuito de reproduzir a interface, com algumas modificações, como parte do desafio final da Trilha de CSS aplicando os temas abordados ao longo das aulas da plataforma da Digital Innovation One.",
+      "url": "https://github.com/marciopsj/dio-github/tree/main/Forma%C3%A7%C3%A3o%20CSS%20Web%20Developer/css-lab-project",
       "github": true
     }
   ],
   "professionalExperience": [
     {
-      "name": "Arquiteto de software / S3 BANK",
+      "name": "Lorem ipsum dolor sit",
       "period": "2022 - até o momento",
-      "description": "É um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações de mercado."
-    },
-    {
-      "name": "Software Engineering Lead / DIO",
-      "period": "2021 - 2022",
-      "description": "Foi um grande prazer fazer parte deste time fantástico e poder contribuir com a transformação de tantas vidas."
-    },
-    {
-      "name": "CEO / Brain Machine",
-      "period": "2016 - 2021",
-      "description": "Anos incríveis ao lado de pessoas maravilhosas ajudando muitas empresas por todo o mundo."
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum dignissimos eveniet, amet quaerat unde ipsum alias pariatur. Voluptatem, sunt nostrum. Ex error enim modi! Unde nemo minima voluptatibus in autem."
     }
   ]
 }
