@@ -1,10 +1,10 @@
 {
   "name": "Marcio Pessanha S Junior",
   "photo": "https://raw.githubusercontent.com/marciopsj/dio-github/main/Forma%C3%A7%C3%A3o%20JavaScript%20Developer/projectLab-Portfolio/assets/img/profile.jpg",
-  "job": "technical operator",
+  "job": "Analista de Suporte Técnico N2 Pleno",
   "location": "Campos dos Goytacazes - RJ",
   "phone": "(16) 9999-9999",
-  "email": "ex@gmail.com",
+  "email": "marciopsj.ti@gmail.com",
   "skills": {
     "hardSkills": [
       {
@@ -47,7 +47,7 @@
       "github": true
     },
     {
-      "name": "Projeto de clone do site HBO Max, com o intuito de reproduzir a interface, com algumas modificações, como parte do desafio final da Trilha de CSS aplicando os temas abordados ao longo das aulas da plataforma da Digital Innovation One.",
+      "name": "Projeto de clone do site HBO Max.",
       "url": "https://github.com/marciopsj/dio-github/tree/main/Forma%C3%A7%C3%A3o%20CSS%20Web%20Developer/css-lab-project",
       "github": true
     }
