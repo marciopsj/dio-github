@@ -12,4 +12,12 @@ const anotherFunc = async () => {
     console.log(data)
 }
 
-anotherFunc()
+/* anotherFunc() */
+
+const getAllUserEmails = async () => {
+    const data = await myCoolFunction()
+    const userEmailArray = data.map(user => user.email)
+    return userEmailArray
+}
+
+console.log(getAllUserEmails())
