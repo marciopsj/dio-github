@@ -1,5 +1,11 @@
+import { InputContainer } from "./styles"
+
 const Input = () => {
-    return <div>Input</div>
+    return (
+        <InputContainer>
+            <input />
+        </InputContainer>
+    )
 }
 
 export default Input
