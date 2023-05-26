@@ -11,10 +11,10 @@ font-family: 'Roboto';
 font-size: 24px;
 
 input {
-    background-color: #aaffaa;
+    background-color: inherit;
     padding: 0 12px;
     width: 100%;
-    height: 75px;    
+    height: inherit;    
     text-align: right;
     border: 0;
     font-size: inherit;
