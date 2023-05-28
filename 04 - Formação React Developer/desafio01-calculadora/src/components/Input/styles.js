@@ -17,7 +17,7 @@ input {
     height: inherit;    
     text-align: right;
     border: 0;
-    font-size: inherit;
+    font-size: 2.5rem;
 }
 
 `
