@@ -1,0 +1,47 @@
+.border {
+    border: 2px solid var(--border-color);
+}
+.main {
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(../../assets/background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 -2rem;
+    height: 100vh;
+    color: var(--text-color);
+}
+
+.main__content {      
+    width: 60%;
+    padding: 40px 24px;    
+}
+
+.main__search {
+    display: flex;
+    align-items: center;
+    gap: 12px;    
+}
+
+.search__input {
+    background-color: transparent;
+    padding: 8px 54px 8px 20px;    
+    border-radius: 24px;   
+    color: inherit;
+}
+
+.button {
+    background-color: var(--bg-color-secondary);
+    padding: 8px 24px;    
+    border-radius: 24px;  
+    text-align: center; 
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    color: inherit;
+    transition: opacity 0.2s ease-in;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
