@@ -1,9 +1,13 @@
 :root {
+    --font-family: 'Roboto', Arial;
     --bg-color-primary: #1D2128;
     --bg-color-secondary: #2D333B;
     --separator-color: rgba(229, 229, 229, 0.2);
-    --border-color: #999999;
+    --border-color: #E5E5E5;
     --text-color: #FFFFFF;
+    --text-color-secondary: #999999;
+    --text-color-tertiary: #539BF5;
+
 }
 
 * {
@@ -16,9 +20,11 @@
 
 body {
     background-color: var(--bg-color-primary);
+    font-family: var(--font-family);
 }
 
 .separator {
     background-color: var(--separator-color);
     border: 1px solid var(--separator-color);
+    margin: 20px 0;
 }

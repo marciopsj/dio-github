@@ -1,23 +1,37 @@
 .border {
     border: 2px solid var(--border-color);
 }
+
+.text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--text-color-secondary);
+}
+
+.text--small {
+    font-size: .75rem;
+    color: var(--text-color-secondary);
+}
+
 .main {
     display: flex;
     justify-content: flex-end;
-    background-image: url(../../assets/background.png);
+    background-image: url(../../assets/img/background.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 -2rem;
-    height: 100vh;
+    height: 100vh;    
     color: var(--text-color);
 }
 
 .main__content {      
     width: 60%;
-    padding: 40px 24px;    
+    padding: 40px 70px;
+    margin-right: 35px;
 }
 
-.main__search {
+.search {
     display: flex;
     align-items: center;
     gap: 12px;    
@@ -25,7 +39,7 @@
 
 .search__input {
     background-color: transparent;
-    padding: 8px 54px 8px 20px;    
+    padding: 8px 120px 8px 20px;    
     border-radius: 24px;   
     color: inherit;
 }
@@ -37,11 +51,54 @@
     text-align: center; 
     letter-spacing: 1.2px;
     font-weight: 400;
-    color: inherit;
+    color: var(--text-color-secondary);
     transition: opacity 0.2s ease-in;
 }
 
 .button:hover {
     cursor: pointer;
     opacity: 0.7;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    gap: 14px;
+}
+
+.profile__picture {
+    width: 110px;
+    height: 110px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.profile__info {
+    display: flex;
+    flex-direction: column;    
+}
+
+.profile__name {
+    color: var(--text-color-secondary);
+}
+
+.profile__description {
+    margin-top: 12px;
+}
+
+.repositories__header {
+    font-weight: 700;
+    text-align: center;
+    color: var(--text-color);
+    letter-spacing: 1.5px;
+    margin-bottom: 24px;
+}
+
+.repositories__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-color-tertiary);
+    margin-bottom: 4px;
 }
