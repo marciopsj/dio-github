@@ -1,9 +1,14 @@
+import React from 'react'
+
+import { Container } from './styles'
+import gitLogo from '../assets/github.png'
+
 function App() {
-  return (
-    <div className="App">
-      Running
-    </div>
-  );
+	return (
+		<Container>
+			<img src={gitLogo} alt="Logotipo do Github" />
+		</Container>
+	)
 }
 
-export default App;
+export default App
