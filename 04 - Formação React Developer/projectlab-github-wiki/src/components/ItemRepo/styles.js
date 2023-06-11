@@ -11,10 +11,15 @@ h3 {
 p {
     font-size: 1rem;
     color: var(--text-color-primary);
-    opacity: 60%;    
+    opacity: 60%;
+    margin-bottom: 20px;
 }
 
 a.remover {
-    color: var(--remove-color);
+    color: var(--link-remover-color);
+}
+
+hr {
+    margin: 20px 0;
 }
 `

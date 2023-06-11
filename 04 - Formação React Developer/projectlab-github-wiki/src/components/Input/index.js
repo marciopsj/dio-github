@@ -2,10 +2,10 @@ import React from 'react'
 
 import { InputContainer } from './styles'
 
-const Input = () => {
+const Input = ({value, onChange}) => {
 	return (
 		<InputContainer>
-			<input placeholder="Digite aqui..." />
+			<input value={value} onChange={onChange} placeholder="Digite aqui..." />
 		</InputContainer>
 	)
 }
