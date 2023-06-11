@@ -4,6 +4,8 @@ export default createGlobalStyle`
 :root {
     --bg-color: #22272E;
     --text-color-primary: #FFFFFF;
+    --remove-color: #ff0000;
+    --border-color: #fafafa;
 }
 
 * {
