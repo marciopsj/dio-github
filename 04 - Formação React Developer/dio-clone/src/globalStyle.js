@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
+    font-family: 'Open Sans';
     background-color: #1e192c;
     color: #ffffff;
     -webkit-font-smoothing: antialiased;
