@@ -17,12 +17,31 @@ import {
 
 import { MdEmail, MdLock } from 'react-icons/md'
 
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useForm } from 'react-hook-form'
+import { yupResolver } from '@hookform/resolvers/yup'
+import * as yup from 'yup'
+
+const schema = yup
+  .object({
+    email: yup.string().email('Digite um e-mail válido.').required('Campo obrigatório.'),
+    password: yup.string().min(3, 'No mínimo três caracteres').required('Campo obrigatório.')
+  })
+  .required()
 
 const Login = () => {
   const navigate = useNavigate()
+  const {
+    control,
+    handleSubmit,
+    formState: { errors, isValid }
+  } = useForm({ resolver: yupResolver(schema), mode: 'onChange' })
 
-  const handleClickSignIn = () => {
+  console.log(isValid, errors)
+
+  const onSubmit = (data) => {
+    console.log(data)
     navigate('/feed')
   }
 
@@ -40,10 +59,23 @@ const Login = () => {
           <Wrapper>
             <TitleLogin>Faça seu cadastro</TitleLogin>
             <SubtitleLogin>Faça seu login e make the change._</SubtitleLogin>
-            <form>
-              <Input placeholder="E-mail" leftIcon={<MdEmail />} />
-              <Input placeholder="Senha" type="password" leftIcon={<MdLock />} />
-              <Button title="Entrar" variant="secondary" onClick={handleClickSignIn} />
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <Input
+                name="email"
+                control={control}
+                placeholder="E-mail"
+                leftIcon={<MdEmail />}
+                errorMessage={errors?.email?.message}
+              />
+              <Input
+                name="password"
+                control={control}
+                placeholder="Senha"
+                type="password"
+                leftIcon={<MdLock />}
+                errorMessage={errors?.password?.message}
+              />
+              <Button title="Entrar" variant="secondary" type="submit" />
             </form>
             <Row>
               <EsqueciText>Esqueci minha senha</EsqueciText>
