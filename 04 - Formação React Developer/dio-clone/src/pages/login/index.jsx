@@ -18,9 +18,19 @@ import {
 import { MdEmail, MdLock } from 'react-icons/md'
 
 import { useNavigate } from 'react-router-dom'
+import { useForm, Controller } from 'react-hook-form'
 
 const Login = () => {
   const navigate = useNavigate()
+
+  const {
+    control,
+    handleSubmit,
+    watch,
+    formState: { errors }
+  } = useForm()
+
+  const onSubmit = (data) => console.log(data)
 
   const handleClickSignIn = () => {
     navigate('/feed')
