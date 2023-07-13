@@ -13,7 +13,15 @@ import { Button } from '../Button'
 
 import logo from '../../assets/logo-dio.png'
 
+import { useNavigate } from 'react-router-dom'
+
 const Header = ({ autenticado }) => {
+  const navigate = useNavigate()
+
+  const handleClickHome = () => {
+    navigate('/')
+  }
+
   return (
     <Wrapper>
       <Container>
@@ -34,7 +42,7 @@ const Header = ({ autenticado }) => {
             <UserPicture src="https://avatars.githubusercontent.com/u/48229224?s=400&u=4cdac3a7b37d62b39c02aa511e471b515a473d3b&v=4" />
           ) : (
             <>
-              <MenuRight href="#">Home</MenuRight>
+              <MenuRight onClick={handleClickHome}>Home</MenuRight>
               <Button title="Entrar" />
               <Button title="Cadastrar" />
             </>
