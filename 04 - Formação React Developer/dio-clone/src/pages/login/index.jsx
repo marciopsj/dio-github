@@ -22,6 +22,8 @@ import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 
+import { api } from '../../services/api'
+
 const schema = yup
   .object({
     email: yup.string().email('Digite um e-mail válido.').required('Campo obrigatório.'),
@@ -37,11 +39,19 @@ const Login = () => {
     formState: { errors, isValid }
   } = useForm({ resolver: yupResolver(schema), mode: 'onChange' })
 
-  console.log(isValid, errors)
+  const onSubmit = async (formData) => {
+    try {
+      const { data } = await api.get(`users?email=${formData.email}&senha=${formData.password}`)
+      console.log('Retorno api', data)
+      if (data.length < 1) {
+        alert('Email ou senha inválido')
+        return
+      }
 
-  const onSubmit = (data) => {
-    console.log(data)
-    navigate('/feed')
+      navigate('/feed')
+    } catch {
+      alert('Houve um erro. Tente novamente.')
+    }
   }
 
   return (
