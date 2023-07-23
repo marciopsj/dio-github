@@ -22,6 +22,14 @@ const Header = ({ autenticado }) => {
     navigate('/')
   }
 
+  const handleClickLogin = () => {
+    navigate('/login')
+  }
+
+  const handleClickSignup = () => {
+    navigate('/signup')
+  }
+
   return (
     <Wrapper>
       <Container>
@@ -43,8 +51,8 @@ const Header = ({ autenticado }) => {
           ) : (
             <>
               <MenuRight onClick={handleClickHome}>Home</MenuRight>
-              <Button title="Entrar" />
-              <Button title="Cadastrar" />
+              <Button title="Entrar" onClick={handleClickLogin} />
+              <Button title="Cadastrar" onClick={handleClickSignup} />
             </>
           )}
         </Row>

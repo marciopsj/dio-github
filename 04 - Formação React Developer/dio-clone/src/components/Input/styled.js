@@ -19,6 +19,10 @@ export const InputText = styled.input`
   height: 30px;
   color: #ffffff;
   border: none;
+
+  &:focus {
+    outline: 0;
+  }
 `
 export const ErrorText = styled.p`
   font-size: 12px;

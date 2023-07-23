@@ -8,6 +8,7 @@ export const ButtonContainer = styled.button`
   width: 100%;
   color: #ffffff;
   border-radius: 22px;
+  cursor: pointer;
 
   ${({ variant }) =>
     variant !== 'primary' &&

@@ -57,7 +57,9 @@ export const Menu = styled.a`
   text-decoration: none;
 `
 
-export const MenuRight = styled(Menu)``
+export const MenuRight = styled(Menu)`
+  cursor: pointer;
+`
 
 export const UserPicture = styled.img`
   width: 32px;
