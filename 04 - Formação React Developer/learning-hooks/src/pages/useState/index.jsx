@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+
 
 export const UseState = () => {
     const [count, setCount] = useState(0)
@@ -12,6 +14,7 @@ export const UseState = () => {
     }
     return (
         <>
+            <Link to="/">Voltar</Link>
             <h1>useState</h1>
             <p>{count}</p>
             <button onClick={() => setCount(count + 1)}>Adicionar</button>

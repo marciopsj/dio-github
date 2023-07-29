@@ -5,6 +5,8 @@ export const Home = () => {
         <>
             <h1>Vamos aprender sobre os Hooks do React!</h1>
             <Link to="/useState">useState</Link>
+            <br />
+            <Link to="/useEffect">useEffect</Link>
         </>
     )
 }
