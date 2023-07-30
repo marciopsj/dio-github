@@ -7,6 +7,12 @@ export const Home = () => {
             <Link to="/useState">useState</Link>
             <br />
             <Link to="/useEffect">useEffect</Link>
+            <br />
+            <Link to="/useCallback">useCallback</Link>
+            <br />
+            <Link to="/useMemo">useMemo</Link>
+
+
         </>
     )
 }
