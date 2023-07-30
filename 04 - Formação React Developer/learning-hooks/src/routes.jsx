@@ -4,6 +4,7 @@ import { UseState } from './pages/useState'
 import { UseEffect } from './pages/useEffect'
 import { UseCallback } from './pages/useCallback'
 import { UseMemo } from './pages/useMemo'
+import { UseRef } from './pages/useRef'
 
 export const AppRoutes = () => {
     return (        
@@ -14,6 +15,8 @@ export const AppRoutes = () => {
                 <Route path="/useEffect" element={<UseEffect />} />
                 <Route path="/useCallback" element={<UseCallback />} />
                 <Route path="/useMemo" element={<UseMemo />} />
+                <Route path="/useRef" element={<UseRef />} />
+
 
 
             </Routes>

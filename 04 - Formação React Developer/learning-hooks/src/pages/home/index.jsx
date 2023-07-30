@@ -11,6 +11,9 @@ export const Home = () => {
             <Link to="/useCallback">useCallback</Link>
             <br />
             <Link to="/useMemo">useMemo</Link>
+            <br />
+            <Link to="/useRef">UseRef</Link>
+
 
 
         </>
