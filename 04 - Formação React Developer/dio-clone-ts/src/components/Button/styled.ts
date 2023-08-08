@@ -1,5 +1,5 @@
 import { styled, css } from 'styled-components'
-import { IButtonStyled } from './types'
+import { IButtonStyled } from './type'
 
 export const ButtonContainer = styled.button<IButtonStyled>`
   position: relative;

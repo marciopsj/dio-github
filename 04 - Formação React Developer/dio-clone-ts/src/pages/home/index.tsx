@@ -3,6 +3,7 @@ import { Header } from '../../components/Header'
 import { MainContainer, TextContent, Title, TitleHighlight } from './styled'
 import Banner from '../../assets/banner.png'
 import { useNavigate } from 'react-router-dom'
+import React from 'react'
 
 const Home = () => {
   const navigate = useNavigate()
@@ -13,7 +14,7 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      <Header autenticado={false} />
       <MainContainer>
         <div>
           <Title>

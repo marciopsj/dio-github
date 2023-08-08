@@ -23,6 +23,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 
 import { api } from '../../services/api'
+import React from 'react'
 
 const schema = yup
   .object({
@@ -39,7 +40,7 @@ const Login = () => {
     formState: { errors, isValid }
   } = useForm({ resolver: yupResolver(schema), mode: 'onChange' })
 
-  const onSubmit = async (formData) => {
+  const onSubmit = async (formData: { email: string; password: string }) => {
     try {
       const { data } = await api.get(`users?email=${formData.email}&senha=${formData.password}`)
       console.log('Retorno api', data)
@@ -56,7 +57,7 @@ const Login = () => {
 
   return (
     <>
-      <Header />
+      <Header autenticado={false} />
       <MainContainer>
         <Column>
           <Title>
@@ -73,6 +74,7 @@ const Login = () => {
                 name="email"
                 control={control}
                 placeholder="E-mail"
+                type="email"
                 leftIcon={<MdEmail />}
                 errorMessage={errors?.email?.message}
               />
