@@ -1,26 +1,29 @@
 import Layout from "../components/Layout/Layout"
+import Table from "../components/Table/Table"
+
+const mockData = [
+    {
+        tech: 'React',
+        tipo: 'Frontend'
+    },
+    {
+        tech: 'Angular',
+        tipo: 'Frontend'
+    },
+    {
+        tech: 'Node',
+        tipo: 'Backend'
+    },
+    {
+        tech: 'MySQL',
+        tipo: 'Database'
+    }       
+]
 
 const Profile = () => {
     return (  
         <Layout>
-            <table className="table table-success table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">Tech</th>
-                        <th scope="col">Tipo</th>                    
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>React</td>
-                        <td>Frontend</td>
-                    </tr>
-                    <tr>                    
-                        <td>Node</td>
-                        <td>Backend</td>
-                    </tr>
-                </tbody>
-            </table>      
+                 <Table data={mockData} />
         </Layout>      
     )
 }
