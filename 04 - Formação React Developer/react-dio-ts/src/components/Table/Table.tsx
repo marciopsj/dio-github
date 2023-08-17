@@ -4,7 +4,7 @@ interface ITech {
 }
 
 interface ITable {
-    data: ITech[]
+    data?: ITech[]
 }
 
 const Table = ({ data }: ITable) => {
@@ -18,7 +18,7 @@ const Table = ({ data }: ITable) => {
                 </thead>
                 <tbody>
                     {
-                        data.map((tech, index) => {
+                        data !== undefined && data.map((tech, index) => {
                             return (
                                 <tr key={index}>
                                     <td>{tech.tech}</td>
