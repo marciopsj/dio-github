@@ -15,7 +15,7 @@ const Home = () => {
         if (user.length === 0) {
             return alert('Informe o nome do usuário.')
         }
-        navigate('/profile')
+        navigate(`/${user}`)
     }
 
     return (  

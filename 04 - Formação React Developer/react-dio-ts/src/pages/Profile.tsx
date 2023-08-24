@@ -1,5 +1,7 @@
-import Layout from "../components/Layout/Layout"
-import Table from "../components/Table/Table"
+import Layout from '../components/Layout/Layout'
+import Table from '../components/Table/Table'
+import { useParams, useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const mockData = [
     {
@@ -21,7 +23,18 @@ const mockData = [
 ]
 
 const Profile = () => {
-    return (  
+
+    const { user } = useParams<{ user: string }>()
+
+    const navigate = useNavigate()
+        
+    useEffect(() => {
+        if (user === 'profile'){
+            navigate('/')
+        }        
+    }, [user])
+        
+        return (  
         <Layout>
                  <Table data={mockData} />
         </Layout>      
