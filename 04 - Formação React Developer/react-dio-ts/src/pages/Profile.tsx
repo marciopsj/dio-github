@@ -1,6 +1,7 @@
 import Layout from '../components/Layout/Layout'
 import Table from '../components/Table/Table'
 import { useParams, useNavigate } from 'react-router-dom'
+import gitApi from '../api/github'
 import { useEffect } from 'react'
 
 const mockData = [
@@ -26,13 +27,18 @@ const Profile = () => {
 
     const { user } = useParams<{ user: string }>()
 
-    const navigate = useNavigate()
-        
+    const navigate = useNavigate()  
+
     useEffect(() => {
-        if (user === 'profile'){
+        gitApi.getUser(user || '')
+        .then(response => navigate(`/${response.login}`))
+        .catch(error => {
+            console.log(error)
             navigate('/')
-        }        
-    }, [user])
+        })
+    }, [navigate, user])
+    
+
         
         return (  
         <Layout>

@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;    
 }
 
-body {
+body {    
     font-family: 'Open Sans';
     background-color: #1e192c;
     color: #ffffff;
