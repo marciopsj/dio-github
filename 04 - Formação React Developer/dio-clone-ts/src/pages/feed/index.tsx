@@ -10,7 +10,7 @@ import React from 'react'
 const Feed = () => {
   return (
     <>
-      <Header autenticado={true} />
+      <Header />
       <MainContainer>
         <Column flex={3}>
           <Title>Feed</Title>

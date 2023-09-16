@@ -22,8 +22,9 @@ import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 
-import { api } from '../../services/api'
-import React from 'react'
+import React, { useContext } from 'react'
+import { IFormData } from './type'
+import { AuthContext } from '../../context/auth'
 
 const schema = yup
   .object({
@@ -33,31 +34,20 @@ const schema = yup
   .required()
 
 const Login = () => {
-  const navigate = useNavigate()
+  const { handleLogin } = useContext(AuthContext)
   const {
     control,
     handleSubmit,
     formState: { errors, isValid }
   } = useForm({ resolver: yupResolver(schema), mode: 'onChange' })
 
-  const onSubmit = async (formData: { email: string; password: string }) => {
-    try {
-      const { data } = await api.get(`users?email=${formData.email}&senha=${formData.password}`)
-      console.log('Retorno api', data)
-      if (data.length < 1) {
-        alert('Email ou senha inválido')
-        return
-      }
-
-      navigate('/feed')
-    } catch {
-      alert('Houve um erro. Tente novamente.')
-    }
+  const onSubmit = async (formData: IFormData) => {
+    handleLogin(formData)
   }
 
   return (
     <>
-      <Header autenticado={false} />
+      <Header />
       <MainContainer>
         <Column>
           <Title>

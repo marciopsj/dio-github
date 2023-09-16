@@ -1,16 +1,15 @@
 import styled from 'styled-components'
 
 export const MainContainer = styled.main`
-  display: flex;  
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
   margin: 0 auto;
   margin-top: 120px;
   width: 100%;
   max-width: 80%;
 `
-
 export const Title = styled.h2`
   font-size: 32px;
   font-weight: 700;

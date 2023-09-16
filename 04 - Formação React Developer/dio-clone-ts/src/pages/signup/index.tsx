@@ -49,7 +49,7 @@ const Signup = () => {
 
   return (
     <>
-      <Header autenticado={false} />
+      <Header />
       <MainContainer>
         <Column>
           <Title>

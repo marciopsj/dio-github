@@ -2,8 +2,9 @@ import styled from 'styled-components'
 
 export const MainContainer = styled.main`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  gap: 40px;
   margin: 0 auto;
   margin-top: 120px;
   width: 100%;
@@ -13,9 +14,8 @@ export const Wrapper = styled.div`
   max-width: 300px;
 `
 
-export const Column = styled.div`
-  flex: 1;
-`
+export const Column = styled.section``
+
 export const Row = styled.div`
   display: flex;
   justify-content: space-between;

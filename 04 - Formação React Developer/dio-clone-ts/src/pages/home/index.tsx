@@ -14,9 +14,9 @@ const Home = () => {
 
   return (
     <>
-      <Header autenticado={false} />
+      <Header />
       <MainContainer>
-        <div>
+        <section>
           <Title>
             <TitleHighlight>
               Implemente
@@ -29,10 +29,10 @@ const Home = () => {
             novo desafio profissional, evoluindo em comunidade com os melhores experts.
           </TextContent>
           <Button title="Começar agora" variant="secondary" onClick={handleClickSignIn} />
-        </div>
-        <div>
+        </section>
+        <section>
           <img src={Banner} alt="Imagem principal" />
-        </div>
+        </section>
       </MainContainer>
     </>
   )
