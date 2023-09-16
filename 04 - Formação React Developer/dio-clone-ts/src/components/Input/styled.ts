@@ -1,7 +1,7 @@
 import { styled } from 'styled-components'
 
 export const InputContainer = styled.div`
-  display: flex;
+  display: flex;  
   align-items: center;
   margin-bottom: 20px;
   max-width: 275px;

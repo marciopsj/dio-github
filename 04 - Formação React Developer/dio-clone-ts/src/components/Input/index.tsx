@@ -7,7 +7,7 @@ const Input = ({ leftIcon, name, control, errorMessage, ...rest }: IInput) => {
   return (
     <>
       <InputContainer>
-        {leftIcon ? (<IconContainer>{leftIcon}</IconContainer>) : null}
+        {leftIcon ? <IconContainer>{leftIcon}</IconContainer> : null}
             <Controller
             name={name}
             control={control}
