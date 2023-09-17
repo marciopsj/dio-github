@@ -14,11 +14,11 @@ import { Button } from '../Button'
 import logo from '../../assets/logo-dio.png'
 
 import { Link, useNavigate } from 'react-router-dom'
-import React, { useContext } from 'react'
-import { AuthContext } from '../../context/auth'
+import React from 'react'
+import { useAuth } from '../../hooks/useAuth'
 
 const Header = () => {
-  const { user, handleSignOut } = useContext(AuthContext)
+  const { user, handleSignOut } = useAuth()
   const navigate = useNavigate()
 
   const handleClickHome = () => {

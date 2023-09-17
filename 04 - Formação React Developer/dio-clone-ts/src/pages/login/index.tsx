@@ -22,9 +22,9 @@ import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 
-import React, { useContext } from 'react'
+import React from 'react'
 import { IFormData } from './type'
-import { AuthContext } from '../../context/auth'
+import { useAuth } from '../../hooks/useAuth'
 
 const schema = yup
   .object({
@@ -34,7 +34,7 @@ const schema = yup
   .required()
 
 const Login = () => {
-  const { handleLogin } = useContext(AuthContext)
+  const { handleLogin } = useAuth()
   const {
     control,
     handleSubmit,
